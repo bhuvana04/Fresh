@@ -1,0 +1,6 @@
+language: c
+sudo: false
+compiler: gcc
+script:
+-gcc -o hello hello.c
+- ./hello
