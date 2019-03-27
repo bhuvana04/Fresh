@@ -1,6 +1,10 @@
-language: c
+matrix:
+include:
+-language: c
 sudo: false
-compiler: gcc
+compiler:
+-clang
+-gcc
 script:
 -gcc -o hello hello.c
 - ./hello
